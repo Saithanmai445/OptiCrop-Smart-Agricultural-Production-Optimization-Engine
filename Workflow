@@ -1,0 +1,54 @@
+Workflow of OptiCrop: Smart Agricultural Production Optimization Engine (AI/ML)
+                  START
+                    │
+                    ▼
+         Farmer Registration/Login
+                    │
+                    ▼
+         Enter Farm & Field Details
+                    │
+                    ▼
+      Collect Input Data
+      • Soil Nutrients (N, P, K, pH)
+      • Temperature
+      • Humidity
+      • Rainfall
+      • Soil Moisture
+      • Crop Images (optional)
+                    │
+                    ▼
+          Data Preprocessing
+      • Data Cleaning
+      • Missing Value Handling
+      • Feature Scaling
+      • Data Transformation
+                    │
+                    ▼
+        AI/ML Processing Engine
+      ┌───────────────────────────┐
+      │ Crop Recommendation       │
+      │ Yield Prediction          │
+      │ Fertilizer Recommendation │
+      │ Irrigation Prediction     │
+      │ Disease Detection (CNN)   │
+      └───────────────────────────┘
+                    │
+                    ▼
+      Generate Smart Recommendations
+      • Best Crop
+      • Expected Yield
+      • Fertilizer Type & Quantity
+      • Irrigation Schedule
+      • Disease Diagnosis & Treatment
+                    │
+                    ▼
+       Display Results on Dashboard
+                    │
+                    ▼
+      Save Recommendations to Database
+                    │
+                    ▼
+          Generate Final Report
+                    │
+                    ▼
+                   END
