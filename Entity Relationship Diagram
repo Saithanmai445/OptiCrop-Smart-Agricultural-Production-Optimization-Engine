@@ -1,0 +1,78 @@
+Entity Relationship Diagram (ERD) for OptiCrop: Smart Agricultural Production Optimization Engine
++-------------------+          1        M        +-------------------+
+|      FARMER       |--------------------------->|       FARM        |
++-------------------+                            +-------------------+
+| PK Farmer_ID      |                            | PK Farm_ID        |
+| Name              |                            | FK Farmer_ID      |
+| Phone             |                            | Farm_Name         |
+| Address           |                            | Location          |
++-------------------+                            | Area              |
+                                                 +-------------------+
+                                                          |
+                                                          | 1
+                                                          | M
+                                                          ▼
+                                              +----------------------+
+                                              |        FIELD         |
+                                              +----------------------+
+                                              | PK Field_ID          |
+                                              | FK Farm_ID           |
+                                              | Soil_pH              |
+                                              | Nitrogen             |
+                                              | Phosphorus           |
+                                              | Potassium            |
+                                              | Moisture             |
+                                              +----------------------+
+                                                 |      |       |
+                     ----------------------------|------|-------|--------------------
+                    |                            |      |       |                   |
+                    |                            |      |       |                   |
+                    ▼                            ▼      ▼       ▼                   ▼
+        +-------------------+       +----------------+  +----------------+  +------------------+
+        |       CROP        |       | WEATHER DATA  |  |    SENSOR      |  | PLANT DISEASE    |
+        +-------------------+       +----------------+  +----------------+  +------------------+
+        | PK Crop_ID        |       | PK Weather_ID |  | PK Sensor_ID   |  | PK Disease_ID    |
+        | Crop_Name         |       | Temperature   |  | Sensor_Type    |  | Disease_Name     |
+        | Season            |       | Humidity      |  | Moisture_Value |  | Severity         |
+        | Duration          |       | Rainfall      |  | Timestamp      |  | Treatment        |
+        +-------------------+       +----------------+  +----------------+  +------------------+
+                    \                  /                    |                    /
+                     \                /                     |                   /
+                      \              /                      |                  /
+                       \            /                       |                 /
+                        \          /                        |                /
+                         ▼        ▼                         ▼               ▼
+                    +---------------------------------------------------------------+
+                    |              AI RECOMMENDATION ENGINE                         |
+                    +---------------------------------------------------------------+
+                    | PK Recommendation_ID                                          |
+                    | Crop Recommendation                                           |
+                    | Yield Prediction                                              |
+                    | Fertilizer Recommendation                                     |
+                    | Irrigation Schedule                                           |
+                    | Disease Prediction                                            |
+                    +---------------------------------------------------------------+
+                                      |
+                                      | 1
+                                      | M
+                                      ▼
+                          +-----------------------------+
+                          |   RECOMMENDATION REPORT     |
+                          +-----------------------------+
+                          | PK Report_ID                |
+                          | FK Recommendation_ID        |
+                          | FK Farmer_ID               |
+                          | Date                       |
+                          | Expected Yield             |
+                          | Suggestions                |
+                          +-----------------------------+
+Relationships
+Farmer (1) → (M) Farm
+Farm (1) → (M) Field
+Field (1) → (M) Crop
+Field (1) → (M) Sensor
+Field (1) → (M) Weather Data
+Field (1) → (M) Plant Disease
+Crop + Sensor + Weather + Disease → AI Recommendation Engine
+AI Recommendation Engine (1) → (M) Recommendation Report
+Farmer (1) → (M) Recommendation Report
