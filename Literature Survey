@@ -1,0 +1,45 @@
+Literature Survey
+Project Title
+
+OptiCrop: Smart Agricultural Production Optimization Engine Using AI and Machine Learning
+
+Introduction
+
+Agriculture is a vital sector that contributes significantly to economic growth and food security. However, farmers often face challenges such as unpredictable weather, declining soil fertility, inefficient irrigation, and plant diseases, which negatively affect crop productivity. Recent advances in Artificial Intelligence (AI) and Machine Learning (ML) have enabled the development of intelligent agricultural systems that provide data-driven recommendations for crop selection, yield prediction, fertilizer optimization, irrigation scheduling, and disease detection.
+
+Literature Review
+1. Crop Recommendation Using Machine Learning
+
+Several studies have demonstrated that machine learning algorithms such as Random Forest, Decision Tree, Support Vector Machine (SVM), and XGBoost can accurately recommend suitable crops based on soil nutrients (N, P, K), pH, rainfall, temperature, and humidity. These approaches help farmers choose crops that are best suited to local environmental conditions, improving productivity and reducing risk.
+
+2. Crop Yield Prediction
+
+Researchers have applied regression techniques and ensemble learning methods to estimate crop yields using historical production records, weather conditions, and soil characteristics. Models such as Random Forest Regression, Linear Regression, and XGBoost Regression have shown high accuracy in forecasting agricultural output, enabling better planning and resource allocation.
+
+3. Smart Irrigation Systems
+
+Studies on smart irrigation emphasize the use of IoT sensors and AI algorithms to monitor soil moisture and weather conditions. Machine learning models analyze this data to determine optimal irrigation schedules, reducing water consumption while maintaining crop health. Such systems are especially beneficial in water-scarce regions.
+
+4. Plant Disease Detection
+
+Deep learning techniques, particularly Convolutional Neural Networks (CNNs), have significantly improved the accuracy of plant disease detection using leaf images. Public datasets such as PlantVillage have been widely used to train models capable of identifying multiple crop diseases, enabling early intervention and minimizing crop losses.
+
+5. Fertilizer Recommendation Systems
+
+AI-based fertilizer recommendation systems analyze soil nutrient content and crop requirements to suggest appropriate fertilizer types and application rates. These systems optimize fertilizer usage, improve crop growth, reduce production costs, and minimize environmental pollution caused by excessive fertilizer application.
+
+6. Integrated Smart Farming Platforms
+
+Recent research focuses on integrating multiple AI technologies into a single decision support platform. These systems combine crop recommendation, yield prediction, disease detection, irrigation management, and weather forecasting to provide comprehensive support for farmers. Such integrated platforms contribute to precision agriculture and sustainable farming practices.
+
+Research Gap
+
+Although many existing systems address individual agricultural problems, most focus on a single task, such as crop recommendation or disease detection. Few systems integrate multiple AI/ML functionalities into a unified platform that provides comprehensive, real-time decision support. Additionally, many solutions lack personalized recommendations based on individual farm conditions and local weather data.
+
+Proposed Solution
+
+The proposed OptiCrop: Smart Agricultural Production Optimization Engine integrates crop recommendation, yield prediction, fertilizer recommendation, irrigation scheduling, plant disease detection, and weather-based advisories into a single AI-powered platform. By combining multiple machine learning and deep learning models, the system delivers accurate, personalized recommendations that help farmers optimize productivity, reduce costs, and promote sustainable agriculture.
+
+Conclusion
+
+The literature indicates that AI and ML have substantial potential to transform agriculture by enabling intelligent decision-making. Existing research demonstrates the effectiveness of machine learning algorithms in solving specific agricultural challenges. Building on these findings, OptiCrop aims to provide an integrated, user-friendly solution that enhances farming efficiency, improves crop yield, conserves resources, and supports sustainable agricultural development.
